@@ -4,11 +4,12 @@ CloudBees OAuth Client App Example
 
 Setup Instructions
 -------------------
-Create a CloudBees application to host the application.  OAuth apps must be served over SSL, so you will need to attach SSL to your application.
+Create a CloudBees application to host the application.  Note that OAuth apps must be served over SSL, so you will need to attach SSL to your application in order to run this application.
 
 Register for a CloudBees OAuth client key/secret (as defined in the CloudBees OAuth docs).
 
 Attach your OAuth client key and secret to your application ID as config variables
+
     bees config:set -a YOUR_APP_ID oauth.key=YOUR_KEY oauth.secret=YOUR_SECRET oauth.callback=YOUR_APP_CALLBACK_URL
 
 Deploying the app
@@ -27,7 +28,7 @@ After the user allows the API permission, the application will be granted an oau
 
 Understanding the code
 ----------------------
-* OAuthFilter.java - ServletFilter that negotiates getting an OAuth token saves it into the HttpSession
-* AppServlet.java - Servlet with the application logic for using the OAuth token from the HttpSession to send API requests
-* CloudBeesClient.java - a trivially simple implementation of a CloudBees API client that can send OAuth-authenticated requests using the Bearer authentication scheme. Note: the standard CloudBees API client does not yet support authentication using Bearer tokens.
-* CloudBeesOAuthDriver.java - an OAuth client implementation for the popular Scribe OAuth library (https://github.com/fernandezpablo85/scribe-java)
+* *OAuthFilter.java* - ServletFilter that negotiates getting an OAuth token saves it into the HttpSession
+* *AppServlet.java* - Servlet with the application logic for using the OAuth token from the HttpSession to send API requests
+* *CloudBeesClient.java* - a trivially simple implementation of a CloudBees API client that can send OAuth-authenticated requests using the Bearer authentication scheme. Note: the standard CloudBees API client does not yet support authentication using Bearer tokens.
+* *CloudBeesOAuthDriver.java* - an OAuth client implementation for the popular Scribe OAuth library (https://github.com/fernandezpablo85/scribe-java)
