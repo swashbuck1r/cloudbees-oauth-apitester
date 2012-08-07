@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<cloudbees-web-app xmlns="http://www.cloudbees.com/xml/webapp/1">
+  <context-param>
+    <param-name>oauth.key</param-name>
+    <param-value>${oauth.key}</param-value>
+  </context-param>
+  <context-param>
+    <param-name>oauth.secret</param-name>
+    <param-value>${oauth.secret}</param-value>
+  </context-param>
+  <context-param>
+    <param-name>oauth.callback</param-name>
+    <param-value>${oauth.callback}</param-value>
+  </context-param>
+  <context-param>
+    <param-name>oauth.prompt.scopes</param-name>
+    <param-value>https://api.cloudbees.com/oauth/api_all</param-value>
+  </context-param>
+</cloudbees-web-app>
