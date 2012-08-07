@@ -4,7 +4,7 @@ CloudBees OAuth Client App Example
 
 Setup Instructions
 -------------------
-Use the CloudBees new application wizard to create a new application to host this example.  Note that OAuth apps must be served over SSL, so you will need to [attach SSL to your application](http://wiki.cloudbees.com/bin/view/RUN/AppSSL) in order to run this application.
+Use the CloudBees application wizard to create a new application to host this example.  Note that OAuth apps must be served over SSL, so you will need to [attach SSL to your application](http://wiki.cloudbees.com/bin/view/RUN/AppSSL) in order to run this application.
 
 Register for a CloudBees OAuth client key/secret (as defined in the CloudBees OAuth docs).
 
